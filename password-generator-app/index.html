@@ -1,32 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Password generator app</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Password generator app</title>
+  </head>
+  <body>
+    <div class="generator-wrapper">
+      <h2 class="title">Password Generator</h2>
 
-  Password Generator
-
-  P4$5W0rD!
-
-  Character Length
-
-  Include Uppercase Letters
-  Include Lowercase Letters
-  Include Numbers
-  Include Symbols
-
-  Strength
-
-  Generate
-
-</body>
+      <div class="screen">
+        <p class="screen__output">P4$5W0rD!</p>
+        <img
+          class="screen_copy"
+          src="/password-generator-app/starter-code/assets/images/icon-copy.svg"
+          alt="copy icon"
+        />
+      </div>
+      <section class="panel">
+        <div class="panel__slider">
+          <div class="slider-inner-wrapper">
+            <p class="panel__length">Character Length</p>
+            <p class="panel__length-number">10</p>
+          </div>
+          <input
+            type="range"
+            class="slider__slider"
+            id="slider"
+            name="slider"
+            min="0"
+            max="20"
+          />
+        </div>
+        <section class="panel__checkbox">
+          <input
+            type="checkbox"
+            class="panel__uppercase"
+            id="panel__uppercase"
+            name="panel__uppercase"
+            value="toUppercase()"
+          />
+          <label for="panel__uppercase">Include Uppercase Letters</label>
+          <input
+            type="checkbox"
+            class="panel__lowercase"
+            id="panel__lowercase"
+            name="panel__lowercase"
+            value="toLowercase()"
+          />
+          <label for="panel__lowercase">Include Lowercase Letters</label>
+          <input
+            type="checkbox"
+            class="panel__number"
+            id="panel__number"
+            name="panel__number"
+            value="tonumber()"
+          />
+          <label for="panel__number">Include Numbers</label>
+          <input
+            type="checkbox"
+            class="panel__symbol"
+            id="panel__symbol"
+            name="panel__symbol"
+            value="tosymbol()"
+          />
+          <label for="panel__symbol">Include Symbols</label>
+        </section>
+        <section class="panel__strength">
+          <p class="strength__name">STRENGTH</p>
+          <div class="strength-wrapper">
+            <p class="strength__howStrength">MEDIUM</p>
+            <!-- do rozpatrzenia -->
+          </div>
+        </section>
+        <button class="panel__button">
+          GENERATE
+          <img
+            class="panel__arrow"
+            src="/password-generator-app/starter-code/assets/images/icon-arrow-right.svg"
+            alt="arrow"
+          />
+        </button>
+      </section>
+    </div>
+  </body>
 </html>
