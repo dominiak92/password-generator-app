@@ -47,54 +47,39 @@
             max="20"
           />
         </div>
-        <section class="panel__checkbox">
-          <div class="checkbox-wrapper">
-            <input
-              type="checkbox"
-              class="panel__uppercase checkbox"
-              id="panel__uppercase checkbox"
-              name="panel__uppercase"
-              value="toUppercase()"
-            />
-            <label for="panel__uppercase">Include Uppercase Letters</label>
-          </div>
-          <div class="checkbox-wrapper">
-            <input
-              type="checkbox"
-              class="panel__lowercase checkbox"
-              id="panel__lowercase"
-              name="panel__lowercase"
-              value="toLowercase()"
-            />
-            <label for="panel__lowercase">Include Lowercase Letters</label>
-          </div>
-          <div class="checkbox-wrapper">
-            <input
-              type="checkbox"
-              class="panel__number checkbox"
-              id="panel__number"
-              name="panel__number"
-              value="tonumber()"
-            />
-            <label for="panel__number">Include Numbers</label>
-          </div>
-          <div class="checkbox-wrapper">
-            <input
-              type="checkbox"
-              class="panel__symbol checkbox"
-              id="panel__symbol"
-              name="panel__symbol"
-              value="tosymbol()"
-            />
-
-            <label for="panel__symbol checkbox">Include Symbols</label>
-          </div>
-        </section>
+        <div class="control-group">
+          <label class="control control-checkbox">
+              Include Uppercase Letters
+                  <input type="checkbox" class="uppercase" checked="checked" />
+              <div class="control_indicator"></div>
+          </label>
+          <label class="control control-checkbox">
+            Include Lowercase Letters
+                  <input type="checkbox" class="lowercase" />
+              <div class="control_indicator"></div>
+          </label>
+          <label class="control control-checkbox">
+              Include Numbers
+                  <input type="checkbox" class="numbers"/>
+              <div class="control_indicator"></div>
+          </label>
+          <label class="control control-checkbox">
+            Include Symbols
+                <input type="checkbox" class="symbols"/>
+            <div class="control_indicator"></div>
+            
+        </label>
+      </div>
         <section class="panel__strength">
           <p class="strength__name">STRENGTH</p>
           <div class="strength-wrapper">
             <p class="strength__howStrength">MEDIUM</p>
-            <!-- do rozpatrzenia -->
+            <div class="strength-bars">
+              <div class="strength-bars__bar"></div>
+              <div class="strength-bars__bar"></div>
+              <div class="strength-bars__bar"></div>
+              <div class="strength-bars__bar"></div>
+            </div>
           </div>
         </section>
         <button class="panel__button">

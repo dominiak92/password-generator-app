@@ -126,4 +126,156 @@ body {
 .panel__checkbox {
   display: flex;
   flex-direction: column;
+}
+@-webkit-keyframes s-ripple {
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes s-ripple {
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes s-ripple-dup {
+  0% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes s-ripple-dup {
+  0% {
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+.panel .control {
+  font-family: "JetBrains Mono", monospace;
+  display: block;
+  position: relative;
+  padding-left: 39px;
+  margin-bottom: 20px;
+  padding-top: 0px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.panel .control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.panel .control input:focus ~ .control_indicator {
+  background: #24232c;
+}
+.panel .control input:checked ~ .control_indicator {
+  background: #A4FFAF;
+  border: 2px solid #A4FFAF;
+}
+.panel .control input:checked ~ .control_indicator:after {
+  display: block;
+}
+.panel .control input:checked:focus ~ .control_indicator {
+  background: #A4FFAF;
+}
+.panel .control input:disabled ~ .control_indicator {
+  background: #24232C;
+  opacity: 0;
+  pointer-events: none;
+}
+.panel .control:hover input ~ .control_indicator {
+  background: #24232c;
+}
+.panel .control:hover input:not([disabled]):checked ~ .control_indicator {
+  background: #A4FFAF;
+}
+.panel .control_indicator {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #24232c;
+  border: 0px solid #000000;
+  border: 2px solid white;
+  border-radius: 0px;
+  margin-top: -3px;
+}
+.panel .control_indicator:after {
+  box-sizing: unset;
+  content: "";
+  position: absolute;
+  display: none;
+}
+.panel .control-checkbox .control_indicator:after {
+  left: 6px;
+  top: 3px;
+  width: 3px;
+  height: 8px;
+  border: solid hsl(248deg, 15%, 11%);
+  border-width: 0 4px 4px 0;
+  transform: rotate(45deg);
+}
+.panel .control-checkbox .control_indicator::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-left: -1.6rem;
+  margin-top: -1.6rem;
+  background: #2aa1c0;
+  border-radius: 3rem;
+  opacity: 0.6;
+  z-index: 99999;
+  transform: scale(0);
+}
+.panel .control-checkbox input:disabled ~ .control_indicator:after {
+  border-color: #24232C;
+}
+.panel .control-checkbox input + .control_indicator::before {
+  -webkit-animation: s-ripple 250ms ease-out;
+          animation: s-ripple 250ms ease-out;
+}
+.panel .control-checkbox input:checked + .control_indicator::before {
+  -webkit-animation-name: s-ripple-dup;
+          animation-name: s-ripple-dup;
+}
+.panel .control-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

@@ -27,7 +27,11 @@
   &__checkbox {
     display: flex;
     flex-direction: column;
-    .checkbox {
-    }
+  }
+  @include checkbox;
+  .control-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
