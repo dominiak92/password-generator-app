@@ -7,6 +7,7 @@ body {
   background-color: #18171F;
   transition: 0.2s linear;
   color: #E6E5EA;
+  font-size: 16px;
 }
 
 .generator-wrapper {
@@ -36,4 +37,87 @@ body {
 .screen__copy {
   width: 17.5px;
   height: 20px;
+}
+
+.panel {
+  width: 343px;
+  height: 423px;
+  background-color: #24232C;
+  box-sizing: border-box;
+  padding: 16px;
+  margin-top: 16px;
+}
+.panel__input .slider-inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 31px;
+}
+.panel__length {
+  font-size: 16px;
+}
+.panel__length-number {
+  font-size: 24px;
+  color: #A4FFAF;
+}
+.panel__slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 311px; /* Full-width */
+  height: 8px;
+  border-radius: 0px; /* Specified height */
+  background: transparent;
+  cursor: pointer; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */ /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+  margin-top: 18px;
+}
+.panel__slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+.panel__slider::-webkit-slider-runnable-track {
+  background: #ecf0fb;
+  border-radius: 0px;
+  height: 8px;
+}
+.panel__slider::-moz-range-track {
+  background: #ecf0fb;
+  border-radius: 0px;
+  height: 8px;
+}
+.panel__slider::-moz-range-thumb {
+  width: 28px; /* Set a specific slider handle width */
+  height: 28px; /* Slider handle height */
+  border-radius: 50%;
+  border: none;
+  cursor: pointer; /* Cursor on hover */
+}
+.panel__slider::-moz-range-progress {
+  background: #A4FFAF;
+  height: 8px;
+  border-radius: 0px;
+}
+.panel__slider::-webkit-slider-runnable-track {
+  background: #a4f3eb;
+  height: 8px;
+  border-radius: 0px;
+}
+.panel__slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -16px;
+  width: 40px; /* Set a specific slider handle width */
+  height: 40px; /* Slider handle height */
+  border-radius: 50%;
+  border: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+  background: #10d8c4; /* Green background */
+  background-image: url(/images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer; /* Cursor on hover */
 }/*# sourceMappingURL=style.css.map */

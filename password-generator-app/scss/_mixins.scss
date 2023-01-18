@@ -1,0 +1,61 @@
+@mixin slider {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 311px; /* Full-width */
+    height: 8px;
+    border-radius: 0px; /* Specified height */
+    background: transparent;
+    cursor: pointer; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+    transition: opacity 0.2s;
+    margin-top: 18px;
+    &:hover {
+      opacity: 1; /* Fully shown on mouse-over */
+    }
+    &::-webkit-slider-runnable-track {
+      background: #ecf0fb;
+      border-radius: 0px;
+      height: 8px;
+    }
+    &::-moz-range-track {
+      background: #ecf0fb;
+      border-radius: 0px;
+      height: 8px;
+    }
+  
+    &::-moz-range-thumb {
+      width: 28px; /* Set a specific slider handle width */
+      height: 28px; /* Slider handle height */
+      border-radius: 50%;
+      border: none;
+      cursor: pointer; /* Cursor on hover */
+    }
+    &::-moz-range-progress {
+      background: $green;
+      height: 8px;
+      border-radius: 0px;
+    }
+    &::-webkit-slider-runnable-track {
+      background: #a4f3eb;
+      height: 8px;
+      border-radius: 0px;
+    }
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none; /* Override default look */
+      appearance: none;
+      margin-top: -16px;
+      width: 40px; /* Set a specific slider handle width */
+      height: 40px; /* Slider handle height */
+      border-radius: 50%;
+      border: none;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+      background: #10d8c4; /* Green background */
+      background-image: url(/images/icon-slider.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer; /* Cursor on hover */
+    }
+  }
