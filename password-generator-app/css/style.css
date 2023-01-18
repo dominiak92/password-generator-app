@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "JetBrains Mono", monospace;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #18171F;
+  transition: 0.2s linear;
+  color: #E6E5EA;
+}
+
+.generator-wrapper {
+  width: 343px;
+  height: 540px;
+}
+
+.title {
+  text-align: center;
+  color: #817D92;
+  font-size: 18px;
+}
+
+.screen {
+  width: 100%;
+  height: 64px;
+  background-color: #24232C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 16px;
+}
+.screen__output {
+  font-size: 24px;
+}
+.screen__copy {
+  width: 17.5px;
+  height: 20px;
+}/*# sourceMappingURL=style.css.map */
