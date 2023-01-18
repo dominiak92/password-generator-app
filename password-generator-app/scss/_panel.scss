@@ -19,9 +19,15 @@
   }
   &__length-number {
     font-size: 24px;
-    color: $green
+    color: $green;
   }
   &__slider {
     @include slider;
+  }
+  &__checkbox {
+    display: flex;
+    flex-direction: column;
+    .checkbox {
+    }
   }
 }

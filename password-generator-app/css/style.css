@@ -19,6 +19,7 @@ body {
   text-align: center;
   color: #817D92;
   font-size: 18px;
+  margin-top: 64px;
 }
 
 .screen {
@@ -74,6 +75,7 @@ body {
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */ /* 0.2 seconds transition on hover */
   transition: opacity 0.2s;
   margin-top: 18px;
+  margin-bottom: 32px;
 }
 .panel__slider:hover {
   opacity: 1; /* Fully shown on mouse-over */
@@ -120,4 +122,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer; /* Cursor on hover */
+}
+.panel__checkbox {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */

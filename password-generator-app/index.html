@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="normalize/normalize.css">
+    <link rel="stylesheet" href="normalize/normalize.css" />
     <title>Frontend Mentor | Password generator app</title>
   </head>
   <body>
@@ -48,38 +48,47 @@
           />
         </div>
         <section class="panel__checkbox">
-          <input
-            type="checkbox"
-            class="panel__uppercase"
-            id="panel__uppercase"
-            name="panel__uppercase"
-            value="toUppercase()"
-          />
-          <label for="panel__uppercase">Include Uppercase Letters</label>
-          <input
-            type="checkbox"
-            class="panel__lowercase"
-            id="panel__lowercase"
-            name="panel__lowercase"
-            value="toLowercase()"
-          />
-          <label for="panel__lowercase">Include Lowercase Letters</label>
-          <input
-            type="checkbox"
-            class="panel__number"
-            id="panel__number"
-            name="panel__number"
-            value="tonumber()"
-          />
-          <label for="panel__number">Include Numbers</label>
-          <input
-            type="checkbox"
-            class="panel__symbol"
-            id="panel__symbol"
-            name="panel__symbol"
-            value="tosymbol()"
-          />
-          <label for="panel__symbol">Include Symbols</label>
+          <div class="checkbox-wrapper">
+            <input
+              type="checkbox"
+              class="panel__uppercase checkbox"
+              id="panel__uppercase checkbox"
+              name="panel__uppercase"
+              value="toUppercase()"
+            />
+            <label for="panel__uppercase">Include Uppercase Letters</label>
+          </div>
+          <div class="checkbox-wrapper">
+            <input
+              type="checkbox"
+              class="panel__lowercase checkbox"
+              id="panel__lowercase"
+              name="panel__lowercase"
+              value="toLowercase()"
+            />
+            <label for="panel__lowercase">Include Lowercase Letters</label>
+          </div>
+          <div class="checkbox-wrapper">
+            <input
+              type="checkbox"
+              class="panel__number checkbox"
+              id="panel__number"
+              name="panel__number"
+              value="tonumber()"
+            />
+            <label for="panel__number">Include Numbers</label>
+          </div>
+          <div class="checkbox-wrapper">
+            <input
+              type="checkbox"
+              class="panel__symbol checkbox"
+              id="panel__symbol"
+              name="panel__symbol"
+              value="tosymbol()"
+            />
+
+            <label for="panel__symbol checkbox">Include Symbols</label>
+          </div>
         </section>
         <section class="panel__strength">
           <p class="strength__name">STRENGTH</p>
