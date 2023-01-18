@@ -38,6 +38,7 @@ body {
 .screen__copy {
   width: 17.5px;
   height: 20px;
+  cursor: pointer;
 }
 
 .panel {
@@ -278,4 +279,53 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.panel__strength {
+  box-sizing: border-box;
+  width: 311px;
+  height: 56px;
+  background-color: #18171F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  margin-top: 15px;
+}
+.panel__strength-name {
+  color: #817D92;
+}
+.panel__howStrength {
+  margin-right: 16px;
+}
+.panel__strength-bars {
+  display: flex;
+  flex-direction: row;
+}
+.panel__strength-bars .bar {
+  box-sizing: border-box;
+  width: 10px;
+  height: 28px;
+  background-color: transparent;
+  margin-right: 8px;
+  border: 2px solid white;
+}
+.panel__strength-bars .bar:last-child {
+  margin-right: 0px;
+}
+.panel__strength-bars .bar.active {
+  border: none;
+  background-color: #F8CD65;
+}
+.panel .strength-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.panel__button {
+  width: 311px;
+  height: 56px;
+  background: #A4FFAF;
+  border: none;
+  margin-top: 16px;
+  color: #24232C;
 }/*# sourceMappingURL=style.css.map */

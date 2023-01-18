@@ -34,4 +34,55 @@
     flex-direction: column;
     justify-content: center;
   }
+  &__strength {
+    box-sizing: border-box;
+    width: 311px;
+    height: 56px;
+    background-color: $black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin-top: 15px;
+  }
+  &__strength-name {
+    color: $gray
+  }
+  &__howStrength {
+    margin-right: 16px;
+  }
+  &__strength-bars {
+    display: flex;
+    flex-direction: row;
+    & .bar {
+        box-sizing: border-box;
+        width: 10px;
+        height: 28px;
+        background-color: transparent;
+        margin-right: 8px;
+        border: 2px solid white;
+    }
+    & .bar:last-child {
+        margin-right: 0px;
+    }
+    & .bar.active {
+        border: none;
+        background-color: $yellow;
+    }
+  }
+  .strength-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+&__button {
+    width: 311px;
+    height: 56px;
+    background: $green;
+    border: none;
+    margin-top: 16px;
+    color: $darkgray
+
+}
 }
