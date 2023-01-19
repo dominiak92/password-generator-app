@@ -13,4 +13,8 @@ body {
 .generator-wrapper {
   width: 343px;
   height: 540px;
+  @include md {
+    width: 540px;
+    height: 695px;
+  }
 }

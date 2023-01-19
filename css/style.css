@@ -14,6 +14,12 @@ body {
   width: 343px;
   height: 540px;
 }
+@media (min-width: 768px) {
+  .generator-wrapper {
+    width: 540px;
+    height: 695px;
+  }
+}
 
 .title {
   text-align: center;
@@ -32,8 +38,18 @@ body {
   box-sizing: border-box;
   padding: 16px;
 }
+@media (min-width: 768px) {
+  .screen {
+    height: 80px;
+  }
+}
 .screen__output {
   font-size: 24px;
+}
+@media (min-width: 768px) {
+  .screen__output {
+    font-size: 32px;
+  }
 }
 .screen__copy {
   width: 17.5px;
@@ -204,17 +220,17 @@ body {
   background: #24232c;
 }
 .panel .control input:checked ~ .control_indicator {
-  background: #A4FFAF;
-  border: 2px solid #A4FFAF;
+  background: #a4ffaf;
+  border: 2px solid #a4ffaf;
 }
 .panel .control input:checked ~ .control_indicator:after {
   display: block;
 }
 .panel .control input:checked:focus ~ .control_indicator {
-  background: #A4FFAF;
+  background: #a4ffaf;
 }
 .panel .control input:disabled ~ .control_indicator {
-  background: #24232C;
+  background: #24232c;
   opacity: 0;
   pointer-events: none;
 }
@@ -222,7 +238,7 @@ body {
   background: #24232c;
 }
 .panel .control:hover input:not([disabled]):checked ~ .control_indicator {
-  background: #A4FFAF;
+  background: #a4ffaf;
 }
 .panel .control_indicator {
   position: absolute;
@@ -237,7 +253,7 @@ body {
   transition: 0.2s linear;
 }
 .panel .control_indicator:hover {
-  border: 2px solid #A4FFAF;
+  border: 2px solid #a4ffaf;
 }
 .panel .control_indicator:after {
   box-sizing: unset;
@@ -271,7 +287,7 @@ body {
   transform: scale(0);
 }
 .panel .control-checkbox input:disabled ~ .control_indicator:after {
-  border-color: #24232C;
+  border-color: #24232c;
 }
 .panel .control-checkbox input + .control_indicator::before {
   -webkit-animation: s-ripple 250ms ease-out;
