@@ -20,6 +20,14 @@ margin-top: 64px;
     &__copy {
         width: 17.5px;
         height: 20px;
+        transition: 0.2s linear;
         cursor: pointer;
+        &:hover {
+            filter: grayscale(100%);
+        }
     }
+    [contentEditable=true]:empty:not(:focus):before {
+        content: attr(data-text);
+        color: $gray;
+      }
 }

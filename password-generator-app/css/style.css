@@ -38,7 +38,15 @@ body {
 .screen__copy {
   width: 17.5px;
   height: 20px;
+  transition: 0.2s linear;
   cursor: pointer;
+}
+.screen__copy:hover {
+  filter: grayscale(100%);
+}
+.screen [contentEditable=true]:empty:not(:focus):before {
+  content: attr(data-text);
+  color: #817D92;
 }
 
 .panel {
@@ -223,10 +231,13 @@ body {
   height: 20px;
   width: 20px;
   background: #24232c;
-  border: 0px solid #000000;
   border: 2px solid white;
   border-radius: 0px;
   margin-top: -3px;
+  transition: 0.2s linear;
+}
+.panel .control_indicator:hover {
+  border: 2px solid #A4FFAF;
 }
 .panel .control_indicator:after {
   box-sizing: unset;
@@ -238,7 +249,7 @@ body {
   left: 6px;
   top: 3px;
   width: 3px;
-  height: 8px;
+  height: 10px;
   border: solid hsl(248deg, 15%, 11%);
   border-width: 0 4px 4px 0;
   transform: rotate(45deg);
@@ -342,4 +353,13 @@ body {
   margin-top: 16px;
   color: #24232C;
   cursor: pointer;
+  transition: 0.2s linear;
+}
+.panel__button:hover {
+  background-color: #24232C;
+  color: #A4FFAF;
+  border: 2px solid #A4FFAF;
+}
+.panel__button:hover .panel__arrow {
+  filter: invert(88%) sepia(26%) saturate(604%) hue-rotate(64deg) brightness(103%) contrast(105%);
 }/*# sourceMappingURL=style.css.map */
