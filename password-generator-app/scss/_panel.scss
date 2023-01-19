@@ -46,7 +46,7 @@
     margin-top: 15px;
   }
   &__strength-name {
-    color: $gray
+    color: $gray;
   }
   &__howStrength {
     margin-right: 16px;
@@ -54,20 +54,18 @@
   &__strength-bars {
     display: flex;
     flex-direction: row;
-    & .bar {
-        box-sizing: border-box;
-        width: 10px;
-        height: 28px;
-        background-color: transparent;
-        margin-right: 8px;
-        border: 2px solid white;
+    & .bar1 {
+      @include bar
     }
-    & .bar:last-child {
-        margin-right: 0px;
+    & .bar2 {
+      @include bar
     }
-    & .bar.active {
-        border: none;
-        background-color: $yellow;
+    & .bar3 {
+      @include bar
+    }
+    & .bar4 {
+      @include bar;
+      margin-right: 0px;
     }
   }
   .strength-wrapper {
@@ -76,13 +74,13 @@
     align-items: center;
   }
 
-&__button {
+  &__button {
     width: 311px;
     height: 56px;
     background: $green;
     border: none;
     margin-top: 16px;
-    color: $darkgray
-
-}
+    color: $darkgray;
+    cursor: pointer;
+  }
 }

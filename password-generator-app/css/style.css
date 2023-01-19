@@ -104,24 +104,19 @@ body {
   border-radius: 0px;
 }
 .panel__slider::-webkit-slider-runnable-track {
-  background: #a4f3eb;
+  background: #A4FFAF;
   height: 8px;
   border-radius: 0px;
 }
 .panel__slider::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  margin-top: -16px;
-  width: 40px; /* Set a specific slider handle width */
-  height: 40px; /* Slider handle height */
+  margin-top: -11px;
+  width: 28px; /* Set a specific slider handle width */
+  height: 28px; /* Slider handle height */
   border-radius: 50%;
   border: none;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
-  background: #10d8c4; /* Green background */
-  background-image: url(/images/icon-slider.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: #E6E5EA; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
 .panel__checkbox {
@@ -301,7 +296,7 @@ body {
   display: flex;
   flex-direction: row;
 }
-.panel__strength-bars .bar {
+.panel__strength-bars .bar1 {
   box-sizing: border-box;
   width: 10px;
   height: 28px;
@@ -309,12 +304,30 @@ body {
   margin-right: 8px;
   border: 2px solid white;
 }
-.panel__strength-bars .bar:last-child {
-  margin-right: 0px;
+.panel__strength-bars .bar2 {
+  box-sizing: border-box;
+  width: 10px;
+  height: 28px;
+  background-color: transparent;
+  margin-right: 8px;
+  border: 2px solid white;
 }
-.panel__strength-bars .bar.active {
-  border: none;
-  background-color: #F8CD65;
+.panel__strength-bars .bar3 {
+  box-sizing: border-box;
+  width: 10px;
+  height: 28px;
+  background-color: transparent;
+  margin-right: 8px;
+  border: 2px solid white;
+}
+.panel__strength-bars .bar4 {
+  box-sizing: border-box;
+  width: 10px;
+  height: 28px;
+  background-color: transparent;
+  margin-right: 8px;
+  border: 2px solid white;
+  margin-right: 0px;
 }
 .panel .strength-wrapper {
   display: flex;
@@ -328,4 +341,5 @@ body {
   border: none;
   margin-top: 16px;
   color: #24232C;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
