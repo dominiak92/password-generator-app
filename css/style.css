@@ -9,16 +9,15 @@ body {
   color: #E6E5EA;
   font-size: 16px;
 }
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
 
 .generator-wrapper {
   width: 343px;
   height: 540px;
-}
-@media (min-width: 768px) {
-  .generator-wrapper {
-    width: 540px;
-    height: 695px;
-  }
 }
 
 .title {
@@ -26,6 +25,11 @@ body {
   color: #817D92;
   font-size: 18px;
   margin-top: 64px;
+}
+@media (min-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
 }
 
 .screen {
@@ -40,6 +44,7 @@ body {
 }
 @media (min-width: 768px) {
   .screen {
+    padding: 32px;
     height: 80px;
   }
 }
@@ -57,6 +62,12 @@ body {
   transition: 0.2s linear;
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  .screen__copy {
+    width: 21px;
+    height: 24px;
+  }
+}
 .screen__copy:hover {
   filter: grayscale(100%);
 }
@@ -73,6 +84,14 @@ body {
   padding: 16px;
   margin-top: 16px;
 }
+@media (min-width: 768px) {
+  .panel {
+    margin-top: 24px;
+    width: 540px;
+    height: 528px;
+    padding: 32px;
+  }
+}
 .panel__input .slider-inner-wrapper {
   display: flex;
   justify-content: space-between;
@@ -83,9 +102,19 @@ body {
 .panel__length {
   font-size: 16px;
 }
+@media (min-width: 768px) {
+  .panel__length {
+    font-size: 18px;
+  }
+}
 .panel__length-number {
   font-size: 24px;
   color: #A4FFAF;
+}
+@media (min-width: 768px) {
+  .panel__length-number {
+    font-size: 32px;
+  }
 }
 .panel__slider {
   -webkit-appearance: none;
@@ -101,6 +130,12 @@ body {
   transition: opacity 0.2s;
   margin-top: 18px;
   margin-bottom: 32px;
+}
+@media (min-width: 768px) {
+  .panel__slider {
+    margin-top: 25px;
+    width: 476px;
+  }
 }
 .panel__slider:hover {
   opacity: 1; /* Fully shown on mouse-over */
@@ -211,6 +246,11 @@ body {
   cursor: pointer;
   font-size: 16px;
 }
+@media (min-width: 768px) {
+  .panel .control {
+    font-size: 18px;
+  }
+}
 .panel .control input {
   position: absolute;
   z-index: -1;
@@ -313,11 +353,23 @@ body {
   padding: 16px;
   margin-top: 15px;
 }
+@media (min-width: 768px) {
+  .panel__strength {
+    width: 476px;
+    height: 72px;
+    padding: 32px;
+  }
+}
 .panel__strength-name {
   color: #817D92;
 }
 .panel__howStrength {
   margin-right: 16px;
+}
+@media (min-width: 768px) {
+  .panel__howStrength {
+    font-size: 24px;
+  }
 }
 .panel__strength-bars {
   display: flex;
@@ -370,6 +422,13 @@ body {
   color: #24232C;
   cursor: pointer;
   transition: 0.2s linear;
+}
+@media (min-width: 768px) {
+  .panel__button {
+    width: 476px;
+    height: 65px;
+    margin-top: 32px;
+  }
 }
 .panel__button:hover {
   background-color: #24232C;

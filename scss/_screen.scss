@@ -1,8 +1,11 @@
 .title {
-text-align: center;
-color: $gray;
-font-size: 18px;
-margin-top: 64px;
+    text-align: center;
+    color: $gray;
+    font-size: 18px;
+    margin-top: 64px;
+    @include md {
+        font-size: 24px;
+    }
 }
 
 .screen {
@@ -14,13 +17,14 @@ margin-top: 64px;
     align-items: center;
     box-sizing: border-box;
     padding: 16px;
-    @include md{
+    @include md {
+        padding: 32px;
         height: 80px;
     }
     &__output {
         font-size: 24px;
         @include md {
-            font-size: 32px;;
+            font-size: 32px;
         }
     }
     &__copy {
@@ -28,12 +32,16 @@ margin-top: 64px;
         height: 20px;
         transition: 0.2s linear;
         cursor: pointer;
+        @include md {
+            width: 21px;
+            height: 24px;
+        }
         &:hover {
             filter: grayscale(100%);
         }
     }
-    [contentEditable=true]:empty:not(:focus):before {
+    [contentEditable="true"]:empty:not(:focus):before {
         content: attr(data-text);
         color: $gray;
-      }
+    }
 }

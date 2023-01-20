@@ -39,6 +39,10 @@
   transition: opacity 0.2s;
   margin-top: 18px;
   margin-bottom: 32px;
+  @include md {
+    margin-top: 25px;
+    width: 476px
+  }
   &:hover {
     opacity: 1; /* Fully shown on mouse-over */
   }
@@ -123,6 +127,9 @@
     padding-top: 0px;
     cursor: pointer;
     font-size: 16px;
+    @include md {
+      font-size: 18px;
+    }
     input {
       position: absolute;
       z-index: -1;
