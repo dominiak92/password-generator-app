@@ -12,12 +12,6 @@ This is a solution to the [Password generator app challenge on Frontend Mentor](
   - [What I learned](#what-i-learned)
 - [Author](#author)
 
-## Overview
-
-### Screenshot
-
-(./preview.jpg)
-
 ### Links
 
 - Live Site URL: [Password Generator app](https://dominiak92.github.io/password-generator-app/)
