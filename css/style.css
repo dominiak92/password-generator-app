@@ -19,6 +19,12 @@ body {
   width: 343px;
   height: 540px;
 }
+@media (min-width: 768px) {
+  .generator-wrapper {
+    width: 540px;
+    height: 695px;
+  }
+}
 
 .title {
   text-align: center;
@@ -341,6 +347,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media (min-width: 768px) {
+  .panel .control-group {
+    margin-top: 10px;
+  }
 }
 .panel__strength {
   box-sizing: border-box;
